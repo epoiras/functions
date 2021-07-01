@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+ // exercitiu 1      
+       function kelvinToFahrenheit(kelvin) {
+           const fahrenheit = Math.floor((kelvin-273) +32);
+           console.log(`The today,s temperature is ${fahrenheit} fahrenheits degrees` );
+       }
+ kelvinToFahrenheit(300)
+
+ 
+ // exercitiu 2
+function humanAgeInDogYears(myAge) {
+    dogYears = 7*myAge;
+    console.log(`your ages in dogs age is ${dogYears} years old`);
+}
+humanAgeInDogYears(31);
+
+// exercitiu 3
+// Aici nu sunt sigura ca asa trebuie, dar asa mi-a iesit...
+function answerMyQuestion(userName, userQuestion) {
+        let randomNumber = Math.floor(Math.random() * 8);
+        userQuestion = randomNumber;
+         if (randomNumber === 0) {
+             console.log(userName +' It is certain');
+         } else if (randomNumber === 1) {
+        console.log(userName +" It is decidedly so");
+        } else if(randomNumber ===2) {
+            console.log(userName +' Reply hazy try again');
+        } else if(randomNumber ===3) {
+            console.log(userName +' Cannot predict now');
+        } else if(randomNumber ===4) {
+            console.log(userName + ' Do not count on it');
+        } else if(randomNumber ===5) {
+            console.log(userName + ' My sources say no');
+        } else if(randomNumber ===6) {
+            console.log(userName +' Outlook not so good');
+        } else if(randomNumber ===7) {
+            console.log(userName +' Signs point to yes');
+        } else {
+            console.log("fara valoare");
+        }
+        }
+        answerMyQuestion("Natalia");
+// exercitiu 4
+ function raceTime(userAge, registeredEarly) {
+     registeredEarly = true;
+     if(userAge <18) {
+         console.log("will start the race at 12:30 am");
+     } else if(userAge > 18 && registeredEarly === true){
+         console.log(" You will race at 9:30 am");
+     } else {console.log(" You will race at 11:00 am")}
+     
+ }
+ raceTime(25, true);
+
+
+   </script> 
+</body>
+</html>
